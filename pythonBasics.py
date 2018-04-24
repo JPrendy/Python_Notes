@@ -1,3 +1,14 @@
+#The following goes over the basics of Python3
+# For example, str(), abs(), min(), max(), upper(), lower(), input, type and len()
+
+testOne = max(1,3,5) #returns max 5
+testTwo = min(-1,4, 7) #return min -1
+abs(-10) #returns 10 makes it positive
+
+#to get a type of a value use type, for example
+print (type("hello"))
+
+
 testVar = "Hello, this is amazing, Wowser"
 age = 13
 print(testVar)

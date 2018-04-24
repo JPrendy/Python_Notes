@@ -55,3 +55,44 @@ print (grade_converter(70))
 
 # This should print an "F"
 print (grade_converter(61))
+
+
+#==================================
+# An example where a function calls another function
+
+def one_good_turn(n):
+  return n + 1
+    
+def deserves_another(n):
+  return one_good_turn(n) + 2
+
+print (one_good_turn(4))
+print (deserves_another(5))
+
+
+#=================================
+# Another example using functions
+def cube(number):
+  return number * number * number
+
+def by_three(number):
+  if number % 3 == 0:
+    return cube(number)
+  else:
+    return False
+
+#remember "\n" prints the content to a newline
+print("\n")  
+print (cube(4))
+print (by_three(9))
+print (by_three(10))
+
+#============================
+#A function that checks if it is type int or float
+def distance_from_zero(name):
+  if type(name) == int or  type(name) == float:
+    return abs(name)
+  else:
+    return "Nope"
+  
+print(distance_from_zero("ok"))
