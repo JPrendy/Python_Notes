@@ -65,3 +65,10 @@ for x in start_list:
 square_list.sort()
 
 print(square_list)
+
+#=========================================
+#An example that looks at deleting items from a list
+backpack = ['xylophone', 'dagger', 'tent', 'bread loaf']
+
+backpack.remove('dagger')
+print(backpack)
