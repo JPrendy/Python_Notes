@@ -61,7 +61,41 @@ for x in range(0, 3):
     print ("We're on time %d" % (x))
 
 
-
+#===========================================
 #Doing the for loop like so in Python will print every number from 0 to 7
 for value in range(7):
     print (value)
+
+
+#===========================================
+#A more complex version of for loop in Python
+hobbies = []
+
+# Add your code below!
+
+for num in range(3):
+  hobby =  input("Tell me one of your favorite hobbies: ")
+  hobbies.append(hobby)
+
+print(hobbies)
+
+
+#==============================================
+#An example that goes over every character in a string using a for loop
+thing = "spam!"
+
+for c in thing:
+  print(c)
+
+print("\n")
+word = "eggs!"
+
+for item in word:
+  print(item)
+
+#================================================
+#This example look at printing out multiple variables in print
+d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+for key in d:
+  print (key, d[key])
