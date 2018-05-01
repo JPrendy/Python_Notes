@@ -44,3 +44,24 @@ def fizz_count(x):
   return count
 
 print(fizz_count(["fizz", "cat", "fizz"]))
+
+#==========================================
+#An example that goes over a while loop
+count = 0
+
+while count < 10: # Add a colon
+  print(count)
+  count +=1
+
+#==========================================
+#Classic for loop breakdown
+#instead of normally of how we do for(i=0;i<3;i++), we do the
+#following like down below, it will print out 0,1,2
+for x in range(0, 3):
+    print ("We're on time %d" % (x))
+
+
+
+#Doing the for loop like so in Python will print every number from 0 to 7
+for value in range(7):
+    print (value)
