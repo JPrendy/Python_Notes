@@ -1,6 +1,6 @@
 #this is a quick example of how classes work in python, instead of calling 'dog' in the constructor we use __init__
 class Dog:
-
+#You can think of __init__() as the function that "boots up" each object the class creates.
     def __init__(self, name="Default", height=0, weight=0 ):
         self.name = name
         self.height = height
@@ -23,3 +23,14 @@ def main():
 #While Sally will work and print out "Wow Sally is 120 and weighs 140"
 
 main()
+
+#===============================================
+#Another quick example of how object oriented works in Python
+
+class Animal(object):
+  
+  def __init__(self, name):
+    self.name = name
+    
+zebra = Animal("Jeffrey")
+print(zebra.name)  
