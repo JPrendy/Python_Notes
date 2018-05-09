@@ -64,3 +64,40 @@ class ShoppingCart(object):
 
 my_cart = ShoppingCart("James")
 my_cart.add_item("eggs", 2)
+
+
+#====================================
+#Another quick example of Object Oriented in Python
+class Triangle(object):
+  number_of_sides = 3
+  def __init__(self, angle1, angle2, angle3):
+    self.angle1 = angle1
+    self.angle2 = angle2
+    self.angle3 = angle3
+    
+  def check_angles(self):
+    if (self.angle1 + self.angle2 + self.angle3) == 180:
+      return True
+    else:
+      return False
+
+my_triangle = Triangle(90, 30, 60)
+print(my_triangle.number_of_sides)
+print(my_triangle.check_angles())
+
+
+#======================================
+#Another quick example
+class Car(object):
+  condition = "new"
+  def __init__(self, model, color, mpg):
+    self.model = model
+    self.color = color
+    self.mpg = mpg
+ 
+
+my_car = Car("DeLorean", "silver", 88)
+print(my_car.condition)
+print(my_car.model)
+print(my_car.color)
+print(my_car.mpg)
